@@ -14,6 +14,11 @@ class PlotCalculator
         $this->input = $input;
     }
 
+    /**
+     * Calculates profitability of plots
+     *
+     * @throws \Exception
+     */
     public function calculate()
     {
         if (empty($this->input)) {
@@ -67,6 +72,11 @@ class PlotCalculator
         return $this->profitability;
     }
 
+    /**
+     * Get result as one array where 0 is first plot, 1 is last plot, 2 is profitability
+     *
+     * @return array
+     */
     public function getResultAsArray()
     {
         return [
