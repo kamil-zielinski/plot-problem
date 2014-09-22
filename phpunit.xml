@@ -10,5 +10,8 @@
         <testsuite name="Main">
             <directory>./tests/</directory>
         </testsuite>
+        <testsuite name="Calculator">
+            <file>./tests/Problem2/PlotCalculatorTest.php</file>
+        </testsuite>
     </testsuites>
 </phpunit>
