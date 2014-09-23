@@ -2,6 +2,9 @@
 
 namespace Problem2;
 
+/**
+ * Finds the solution for the problem of plots profitability.
+ */
 class PlotCalculator
 {
     private $input;
@@ -15,7 +18,7 @@ class PlotCalculator
     }
 
     /**
-     * Calculates profitability of plots
+     * Calculates profitability of plots. Main algorithm.
      *
      * @throws \Exception
      */
@@ -25,7 +28,7 @@ class PlotCalculator
             throw new \Exception('There\'s no input set. How can I calculate?');
         }
 
-        //I could count profitabilities
+        //Profitabilities could be count
         $plotNumber = $this->input->getPlotNumber();
         $profitabilities = $this->input->getProfitabilities();
 
@@ -73,7 +76,8 @@ class PlotCalculator
     }
 
     /**
-     * Get result as one array where 0 is first plot, 1 is last plot, 2 is profitability
+     * Gets result as one array where 0 key is first plot,
+     * 1 is last plot, 2 is profitability
      *
      * @return array
      */

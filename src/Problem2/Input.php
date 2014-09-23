@@ -2,6 +2,10 @@
 
 namespace Problem2;
 
+/**
+ * Input implementation for PlotCalculator
+ * By default it reads data from STDIN
+ */
 class Input implements InputInterface
 {
     private $plotNumber;
